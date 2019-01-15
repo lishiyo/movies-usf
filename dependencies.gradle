@@ -6,7 +6,7 @@ ext.deps = [:]
 def versions = [:]
 
 versions.gradle = "4.10.2"
-versions.android_gradle_plugin = "3.0.1"
+versions.android_gradle_plugin = '3.3.0'
 versions.min_sdk = 21
 versions.target_sdk = 22
 // Preferably keep this in sync
@@ -303,6 +303,7 @@ build_versions.gradle = versions.gradle
 ext.build_versions = build_versions
 
 def addRepos(RepositoryHandler handler) {
+    handler.mavenCentral()
     handler.google()
     handler.jcenter()
     handler.maven { url "https://jitpack.io" }

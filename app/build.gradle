@@ -22,7 +22,6 @@ androidExtensions {
 
 android {
     compileSdkVersion build_versions.build_sdk
-    buildToolsVersion build_versions.build_tools
 
     defaultConfig {
         applicationId "co.kaush.msusf"
